@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="registration.css" type="text/css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,29 +14,31 @@
     <title>Registration Form</title>
 </head>
 <body>
+    <div>
     <h1>Registration Form</h1>
+
     <form>
         <table>
             <tr>
-                <td>First Name:</td>
+                <td class="label">First Name:</td>
                 <td>
                     <input type="text" placeholder="Enter First Name">
                 </td>
             </tr>
             <tr>
-                <td>Last Name:</td>
+                <td class="label">Last Name:</td>
                 <td>
                     <input type="text" placeholder="Enter Last Name">
                 </td>
             </tr>
             <tr>
-                <td>Email Address:</td>
+                <td class="label">Email Address:</td>
                 <td>
                     <input type="email" placeholder="Enter Email">
                 </td>
             </tr>
             <tr>
-                <td>Phone:</td>
+                <td class="label">Select Area Code:</td>
                 <td>
                     <select>
                         <option>314</option>
@@ -48,15 +52,25 @@
                         <option>785</option>
                         <option>913</option>
                     </select>
-                    <input type="tel" placeholder="Enter Phone Number">
                 </td>
+            </tr>
+            <tr>
+                <td class="label">Phone Number:</td>
+                <td>
+                    <input type="email" placeholder="Enter Phone Number">
+                </td>
+            </tr>
                 <tr>
-                    <td>
+                    <td class="button1">
                         <input type="submit" value="Submit Form">
                     </td>
                 </tr>
             </tr>
         </table>
     </form>
+</div>
+    
+    
+
 </body>
 </html>
