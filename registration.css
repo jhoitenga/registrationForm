@@ -62,9 +62,7 @@ select:hover {
 }
 
 input[type=submit] {
-    width: 100%;
     padding: 10px 12px;
-    margin: 8px 0;
     box-sizing: border-box;
     border-radius: 4px;
     background-color: #40798C;
@@ -78,8 +76,3 @@ input[type=submit]:hover {
     background-color: white;
     color: #40798C;
   }
-
-  input[type=submit]:visited {
-    color: #8312ac;
-    text-decoration: dotted;
-}

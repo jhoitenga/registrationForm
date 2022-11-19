@@ -11,6 +11,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <script>
+        function myFunction() {
+          alert("Thank you for registering!");
+        }
+    </script>
+
+<script>
+
+    function fireSweetAlert() {
+        Swal.fire(
+            'Good job!',
+            'You clicked the button!',
+            'success'
+        )
+    }
+
+  </script>
+
     <title>Registration Form</title>
 </head>
 <body>
@@ -61,16 +79,15 @@
                 </td>
             </tr>
                 <tr>
-                    <td class="button1">
+                    <td class="button1" onclick="myFunction()"> 
                         <input type="submit" value="Submit Form">
                     </td>
                 </tr>
             </tr>
+        </div>
         </table>
     </form>
 </div>
-    
-    
 
 </body>
 </html>
