@@ -1,3 +1,7 @@
+body {
+    background-color: #70A9A1;
+}
+
 h1 {
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
@@ -5,10 +9,10 @@ h1 {
     color: #40798C;
 }
 
-div {
-    width: 50%;
+.form {
+    width: 45%;
     background-color: #CFE0C3;
-    padding: 10px 12px;
+    padding: 2px 40px;
     margin: auto;
     box-sizing: border-box;
     border-radius: 40px;
@@ -24,7 +28,7 @@ div {
 }
 
 select {
-    width: 50%;
+    width: 100%;
     font-family: 'Roboto Slab', serif;
     font-weight: 400;
     color: #000;
@@ -45,6 +49,9 @@ input {
     border-radius: 6px;
 }
 
+input[type=date]:hover {
+    background-color:  #f5f5dc;
+}
 input[type=text]:hover {
     background-color:  #f5f5dc;
 }
@@ -61,18 +68,25 @@ select:hover {
     background-color:  #f5f5dc;
 }
 
+.button {
+    width: 20%;
+    padding: 12px 12px;
+    margin: auto;
+}
+
 input[type=submit] {
-    padding: 10px 12px;
-    box-sizing: border-box;
-    border-radius: 4px;
+    padding: 12px 12px;
+    border-radius: 20px;
     background-color: #40798C;
     color: white;
-    font-family: 'Roboto Slab', serif;
     text-decoration: none;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 input[type=submit]:hover {
-    background-color: white;
-    color: #40798C;
+    background-color: #1F363D;
+    color: white;
+    box-shadow: 0px 10px 15px #1F363D;
   }
+

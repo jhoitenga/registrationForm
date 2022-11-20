@@ -11,28 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <script>
-        function myFunction() {
-          alert("Thank you for registering!");
-        }
-    </script>
-
-<script>
-
-    function fireSweetAlert() {
-        Swal.fire(
-            'Good job!',
-            'You clicked the button!',
-            'success'
-        )
-    }
-
-  </script>
-
     <title>Registration Form</title>
 </head>
 <body>
-    <div>
+    <div class="form">
     <h1>Registration Form</h1>
 
     <form>
@@ -40,31 +22,32 @@
             <tr>
                 <td class="label">Date:</td>
                 <td>
-                    <input type="date">
+                    <input type="date" name="date" required="required">
                 </td>
             </tr>
             <tr>
                 <td class="label">First Name:</td>
                 <td>
-                    <input type="text" placeholder="Enter First Name">
+                    <input type="text" name="First Name" placeholder="Enter First Name" required="required">
                 </td>
             </tr>
             <tr>
                 <td class="label">Last Name:</td>
                 <td>
-                    <input type="text" placeholder="Enter Last Name">
+                    <input type="text" name="Last Name" placeholder="Enter Last Name" required="required">
                 </td>
             </tr>
             <tr>
                 <td class="label">Email Address:</td>
                 <td>
-                    <input type="email" placeholder="Enter Email" required="required">
+                    <input type="email" name="Email" placeholder="Enter Email" required="required">
                 </td>
             </tr>
             <tr>
-                <td class="label">Select Area Code:</td>
+                <td class="label">Area Code:</td>
                 <td>
-                    <select name="area code">
+                    <input list="areacode" placeholder="Select Area code" required="required">
+                    <datalist id="areacode">
                         <option value="314">314</option>
                         <option value="417">417</option>
                         <option value="537">537</option>
@@ -75,23 +58,19 @@
                         <option value="620">620</option>
                         <option value="785">785</option>
                         <option value="913">913</option>
-                    </select>
+                    </datalist>
                 </td>
             </tr>
             <tr>
                 <td class="label">Phone Number:</td>
                 <td>
-                    <input type="email" placeholder="Enter Phone Number">
+                    <input type="tel" name="Phone" placeholder="Enter Phone Number" required="required">
                 </td>
             </tr>
-                <tr>
-                    <td class="button1" onclick="myFunction()"> 
-                        <input type="submit" name="Submit" value="Submit">
-                    </td>
-                </tr>
-            </tr>
+    </table>
+        <div class="button" onclick="myFunction()">
+            <input type="submit" name="submit" id="submit" value="submit">
         </div>
-        </table>
     </form>
 </div>
 
